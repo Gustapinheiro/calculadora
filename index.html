@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+</head>
+
+<body>
+
+<div class="calculator">
+  <input type="text" class="display" readonly>
+  <table>
+     <tr>
+        <td>
+            <button class="btn" onclick="showAlert('0')">0</button>
+            <button class="btn" onclick="showAlert('1')">1</button>
+            <button class="btn" onclick="showAlert('2')">2</button>
+            <button class="btn" onclick="showAlert('3')">3</button>
+            <button class="btn" onclick="showAlert('4')">4</button>
+
+        </td>
+     </tr>
+  </table>
+  <table>
+    <tr>
+        <td>
+  <button class="btn" onclick="showAlert('5')">5</button>
+  <button class="btn" onclick="showAlert('6')">6</button>
+  <button class="btn" onclick="showAlert('7')">7</button>
+  <button class="btn" onclick="showAlert('8')">8</button>
+  <button class="btn" onclick="showAlert('9')">9</button>
+
+        </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+        <td>
+  <button class="btn" onclick="showAlert(',')">,</button>
+  <button class="btn" onclick="showAlert('C')">C</button>
+  <button class="btn" onclick="showAlert('CE')">CE</button>
+  <button class="btn" onclick="showAlert('=')">=</button>
+  <button class="btn" onclick="showAlert('+')">+</button>
+        </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+        <td>
+            <button class="btn" onclick="showAlert('-')">-</button>
+            <button class="btn" onclick="showAlert('*')">*</button>
+            <button class="btn" onclick="showAlert('/')">/</button>
+            <button class="btn" onclick="showAlert('%')">%</button>
+            <button class="btn" onclick="showAlert('<--')"><--</button>
+        </td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  function showAlert(value) {
+    alert("Você pressionou o botão " + value);
+  }
+</script>
+
+</body>
+</html>
